@@ -23,19 +23,22 @@
 <!--Modal--->
 <div id="id03" class="modal">
 
-  <form class="modal-content animate" action="http://formspree.io/joey.rivera.jr@hotmail.com" Method="POST">
+  <form id="contactform" class="modal-content animate"  Method="POST">
     <div class="container">
 	
-	 
+	
       <label><b>Name</b></label>
       <input type="text" placeholder="Enter Name" name="name" required>
 
 
       <label><b>Email</b></label>
-      <input type="email" placeholder="Enter Email" name="email" required  >
+      <input type="email" placeholder="Enter Email" name="_replyto" required  >
+	  <input type="hidden" name="_subject" value="">
      
 		<label><b>Message</b></label>
 		<textarea name="message" placeholder="Send me a message.." style="height:150px;"></textarea>
+		
+		<input type="text" name="_gotcha" style="display:none;">
 		
       <div class="clearfix">
 	  <button type="submit">Send</button>
@@ -46,6 +49,7 @@
     </div>
   </form>
 </div>
+
 
 <!--End Of Modal-->	
 	
@@ -92,6 +96,7 @@
 		<!--script-->
 		<script src="javascript/animateimage.js"> </script>
 		<script src="javascript/modal.js"></script>
+		<script src="javascript/sent.js"></script>
 		
 		<!--end of script-->
 			<!--float profile left-->
