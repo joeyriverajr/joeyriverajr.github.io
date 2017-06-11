@@ -23,7 +23,7 @@
 <!--Modal--->
 <div id="id03" class="modal">
 
-  <form class="modal-content animate" action="http://formspree.io/joey.rivera.jr@hotmail.com" Method="POST">
+   <form class="modal-content animate" action="sent.php" Method="POST">
     <div class="container">
 	
 	 
@@ -38,7 +38,7 @@
 		<textarea name="message" placeholder="Send me a message.." style="height:150px;"></textarea>
 		
       <div class="clearfix">
-	  <button type="submit">Send</button>
+	  <button type="submit" name="sent">Send</button>
         <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn1">Cancel</button>
         
 		
